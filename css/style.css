@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "VT323", monospace;
+}
+
+*::selection {
+  color: black;
+  background-color: white;
+}
+
+html {
+  scroll-padding-top: 14vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  background-color: #000;
+}
+
+header {
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+header .navBlock {
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+header .navBlock ul {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+header .navBlock ul .Logo {
+  flex-basis: 80%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+header .navBlock ul .Logo a {
+  height: max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+header .navBlock ul .Logo a img {
+  width: 260px;
+}
+header .navBlock ul .Resume {
+  flex-basis: 20%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1px;
+  padding-right: 4%;
+}
+header .navBlock ul .Resume button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 1% 10%;
+  font-size: 1px;
+  transition: ease-in 0.3s;
+  cursor: pointer;
+  font-size: 23em;
+  color: #fff;
+}
+header .navBlock ul .Resume button:hover {
+  background-color: #fff;
+  transition: ease-in 0.3s;
+  color: #000;
+}
+
+.homeBlock {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.homeBlock .name {
+  width: inherit;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.homeBlock .name h1 {
+  font-size: 2.3rem;
+  margin: 0% 0%;
+  color: #fff;
+}
+.homeBlock .homeBlockButton {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+}
+.homeBlock .homeBlockButton button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 1% 10%;
+  font-size: 1px;
+  transition: ease-in 0.3s;
+  cursor: pointer;
+  padding: 1% 3%;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 40px;
+}
+.homeBlock .homeBlockButton button:hover {
+  background-color: #fff;
+  transition: ease-in 0.3s;
+  color: #000;
+}
+
+.aboutMe {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8%;
+}
+.aboutMe .title {
+  width: inherit;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.aboutMe .title h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: #fff;
+}
+.aboutMe .para {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 85%;
+  margin: 0% auto;
+}
+.aboutMe .para p {
+  width: inherit;
+  margin: 0px 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+.aboutMe .para button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 1% 10%;
+  font-size: 1px;
+  transition: ease-in 0.3s;
+  cursor: pointer;
+  padding: 1% 3%;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 40px;
+}
+.aboutMe .para button:hover {
+  background-color: #fff;
+  transition: ease-in 0.3s;
+  color: #000;
+}
+
+.mySkills {
+  width: 100%;
+  height: 32vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mySkills .title {
+  width: inherit;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.mySkills .title h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: #fff;
+}
+.mySkills .skills {
+  width: 85%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mySkills .skills div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #000;
+  height: 7vh;
+  margin: 2%;
+  padding: 2.7%;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: ease-in 0.3s;
+}
+.mySkills .skills div:hover {
+  background-color: #fff;
+  color: #000;
+  transition: ease-in 0.3s;
+}
+
+.project {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project .title {
+  width: inherit;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.project .title h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .title {
+  width: inherit;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.contact .title h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: #fff;
+}
+.contact .Forms {
+  margin-top: 5vh;
+  width: 80%;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .Forms label {
+  display: block;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.contact .Forms input {
+  padding-left: 2%;
+  font-size: 1.3rem;
+  height: 7vh;
+  width: 90%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 7px;
+}
+.contact .Forms input:focus {
+  border: 2px solid #fff;
+  outline: none;
+}
+.contact .Forms textarea {
+  width: 90%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  color: #fff;
+  padding-left: 2%;
+  font-size: 1.3rem;
+  resize: none;
+}
+.contact .Forms textarea:focus {
+  outline: none;
+}
+.contact .Forms #submit {
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+.contact .Forms #submit:hover {
+  background-color: #fff;
+  color: #000;
+  transition: ease-in 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- nav block start -->
+    <header>
+        <section class="navBlock">
+            <ul>
+                <li class="Logo">
+                    <a href="#home">
+                        <img src="./image/logo_change.png" alt="">
+                    </a>
+                <li class="Resume">
+                    <button onclick="resume('./Files/Ganeshamurthy K.pdf')">Resume</button>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <!-- nav block ends -->
+
+    <!-- home page starts -->
+    <section class="homeBlock" id="home">
+        <aside class="name">
+            <h1>HEY, I'M <span id="element"></span></h1>
+        </aside>
+        <aside class="homeBlockButton">
+            <button onclick="button('#project')">Projects</button>
+        </aside>
+    </section>
+    <!-- home page ends -->
+
+    <!-- aboutme start -->
+    <section class="aboutMe">
+        <aside class="title">
+            <h1>About Me</h1>
+        </aside>
+        <aside class="para">
+            <p>
+                I am a graduate in Computer Science and Engineering, holding a B.E. degree, from S.A. Engineering
+                College.
+                I have a strong interest in coding and am excited to learn more.
+                I am constantly seeking new challenges and opportunities to expand my knowledge and skills, and I
+                believe that such an environment will help me reach my full potential.
+                My interest in coding stems from the satisfaction of transforming ideas into reality.
+                With proficiency in programming languages like Java, HTML, CSS, SASS, MySQL and JavaScript.
+                I am highly motivated and committed to continuous learning and improvement.
+                I am eager to take on new challenges and contribute my skills and knowledge to projects that push
+                boundaries and deliver innovative solutions.
+                I am excited about the possibilities that lie ahead and look forward to leveraging my skills and
+                experiences to make a meaningful impact in the field of computer science and engineering
+            </p>
+            <br><br><br>
+            <button onclick="button('#contact')">Contact</button>
+        </aside>
+
+    </section>
+    <!-- about me ends -->
+
+    <!-- Skill starts -->
+    <section class="mySkills">
+        <aside class="title">
+            <h1>Skills</h1>
+        </aside>
+        <aside class="skills">
+            <div>Java</div>
+            <div>MySQL</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>SASS</div>
+            <div>JavaScript</div>
+        </aside>
+    </section>
+    <!-- Skill ends -->
+
+    <!-- Project starts -->
+    <section class="project" id="project">
+        <aside class="title">
+            <h1>Project</h1>
+        </aside>
+    </section>
+    <!-- Project ends -->
+
+    <!-- Contact starts -->
+    <section class="contact" id="contact">
+        <aside class="title">
+            <h1>Contact</h1>
+        </aside>
+        <aside class="Forms">
+            <form action="" method="post">
+                <!-- Name -->
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" placeholder="enter your name" />
+                <br><br><br>
+                <!-- email -->
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="enter your email" />
+                <br><br><br>
+                <!-- message -->
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" cols="40" rows="5"></textarea>
+                <br><br><br>
+                <input type="button" value="submit" onclick="sendMail()" id="submit">
+            </form>
+        </aside>
+    </section>
+    <!-- contact ends -->
+
+
+
+    <!-- Script area -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./js/typed.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/contact.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("VY3vpa1UajGeYiH1z");
+        })();
+    </script>
+
+</body>
+
+</html>
