@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio</title>
+    <title>Ganeshamurthy K</title>
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
 </head>
 
 <body>
@@ -99,21 +100,50 @@
             <form action="" method="post">
                 <!-- Name -->
                 <label for="name">Name</label><br>
-                <input type="text" name="name" id="name" placeholder="enter your name" />
+                <input type="text" name="name" id="name" placeholder="enter your name" required />
                 <br><br><br>
                 <!-- email -->
                 <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" placeholder="enter your email" />
+                <input type="email" name="email" id="email" placeholder="enter your email" required />
                 <br><br><br>
                 <!-- message -->
                 <label for="message">Message</label><br>
-                <textarea id="message" name="message" cols="40" rows="5"></textarea>
+                <textarea id="message" name="message" cols="40" rows="5" placeholder="enter your message"
+                    required></textarea>
                 <br><br><br>
                 <input type="button" value="submit" onclick="sendMail()" id="submit">
             </form>
         </aside>
     </section>
     <!-- contact ends -->
+
+    <!-- Footer area -->
+    <footer>
+        <section class="NameSocial">
+            <aside class="name">
+                <h1>Ganeshamurthy K</h1>
+            </aside>
+            <aside class="social">
+                <a href="https://github.com/Ganeshamurthy">
+                    <i class="bi-brands bi-github"></i>
+                </a>
+                <a href="#">
+                    <i class="bi-brands bi-linkedin"></i>
+                </a>
+            </aside>
+        </section>
+        <section class="line">
+            <hr>
+        </section>
+        <section class="copywrits">
+            <p>&copy; Copyright&nbsp;</p>
+            <script>
+                let h = new Date().getFullYear();
+                document.write("<p>" + h + "</p>")
+            </script>
+            <p>.&nbsp; Made by Ganeshamurthy K</p>
+        </section>
+    </footer>
 
 
 
@@ -124,9 +154,9 @@
     <script src="./js/contact.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function () {
-            emailjs.init("VY3vpa1UajGeYiH1z");
-        })();
+            (function () {
+                emailjs.init("VY3vpa1UajGeYiH1z");
+            })();
     </script>
 
 </body>

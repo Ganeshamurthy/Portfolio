@@ -2,7 +2,7 @@ function sendMail() {
   var params = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
-    name: document.getElementById("message").value,
+    message: document.getElementById("message").value,
   };
 
   const service_ID="service_5dssc9d";
